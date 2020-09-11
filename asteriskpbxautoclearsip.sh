@@ -21,4 +21,4 @@ case "${cstat}" in
         logger "extension ${regString} is registered";
         ;;
 esac
-#
+
