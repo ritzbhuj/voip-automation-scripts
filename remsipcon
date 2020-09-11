@@ -1,0 +1,9 @@
+#MikrotikScript
+#Date: 2020-09-07
+#By: Ritesh
+#Desc: Script to remove SIP connection from 172.xxx.xxx.xxx
+:global ipadd "172.xxx.xxx.xxx" #IP address of the extension
+:foreach i in=[/ip firewall connection find src-address~$ipadd] do={
+/ip firewall connection remove $i
+}
+
